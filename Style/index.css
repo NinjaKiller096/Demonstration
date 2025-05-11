@@ -1,0 +1,146 @@
+.navigation-bar {
+  background-color: #ffffff; /* Couleur de fond sombre */
+  color: rgb(0, 0, 0); /* Couleur du texte blanc */
+  padding: 15px 20px; /* Espacement intérieur haut/bas et gauche/droite */
+  display: flex; /* Utilisation de Flexbox pour l'alignement */
+  justify-content: space-between; /* Espacement maximal entre le logo et la navigation */
+  align-items: center; /* Alignement vertical au centre */
+}
+
+.logo :hover {
+  opacity: 50%; /* Styles pour le logo si nécessaire */
+}
+
+.logo-image {
+  max-height: 50px; /* Hauteur maximale du logo */
+  border-radius: 5px;
+}
+
+.navigation a {
+  color: rgb(0, 0, 0); /* Couleur du texte des liens */
+  text-decoration: none; /* Supprime le soulignement par défaut */
+  margin-left: 20px; /* Espacement à gauche entre les liens */
+  font-weight: bold; /* Texte en gras (facultatif) */
+  transition: color 0.3s ease; /* Animation de la couleur au survol */
+}
+
+.navigation a:hover {
+  color: #848484; /* Couleur du texte au survol (orange dans cet exemple) */
+}
+
+/* Style pour que l'image prenne tout l'espace */
+.full-width-image {
+  width: auto; /* Prend toute la largeur du parent */
+  height: 50%; /* La hauteur s'ajuste proportionnellement */
+  display: block; /* Empêche les espaces inutiles sous l'image */
+}
+
+/* Si vous voulez que l'image remplisse une section spécifique (par exemple, le viewport) */
+.image-container-full {
+  position: relative; /* Nécessaire pour positionner l'image absolument à l'intérieur */
+  width: 100vw; /* Prend toute la largeur de la fenêtre */
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  overflow: hidden; /* Empêche le défilement si l'image dépasse (avec object-fit: cover) */
+  object-fit: cover;
+}
+
+.image-container-full img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Remplira le conteneur en conservant les proportions (peut rogner) */
+  /* object-fit: contain; /* S'assurera que toute l'image est visible (peut laisser des espaces vides) */
+  opacity: 75%; /* Conserve l'opacité */
+}
+
+.image-title {
+  font-size:3em;
+  text-align: center; /* Correction de 'auto' en 'center' pour centrer le texte */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour la lisibilité */
+  color: white;
+  padding: 10px;
+  margin: 0; /* Supprime les marges par défaut du titre */
+}
+
+img{
+  height: 600px;
+}
+
+.boutons{
+  color:white;
+  text-align:center;
+  font-size:6em;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    color: orange;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+li::before,
+li::after
+ {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+}
+
+li::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+}
+
+li::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+}
+
+li span {
+    border-radius: 5px;
+    position: relative;
+    height: 120%;
+    top: -10%;
+    box-sizing: border-box;
+    border: 0.08em solid;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+}
+
+li:hover span {
+    transform: translateX(0.15em);
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
