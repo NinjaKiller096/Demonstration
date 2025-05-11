@@ -10,9 +10,3 @@ Pour chaque élément présenté ci-dessous :
 2. **Copiez le code HTML :** Récupérez la structure de l'élément.
 3. **Copiez le code CSS :** Ajoutez le style pour une apparence similaire.
 4. **Collez et adaptez :** Intégrez le code dans vos fichiers et personnalisez-le selon vos besoins (textes, couleurs, images, etc.).
-
-## Éléments de Démonstration
-
-### 1. Titre avec Sous-titre
-
-**Aperçu :**
