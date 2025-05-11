@@ -143,6 +143,10 @@ body {
   padding-top:50px;
 }
 
+.sentbutton{
+    padding-bottom:250px;
+}
+
 /* Send Button */
 .button {
   --primary: #ff5569;
